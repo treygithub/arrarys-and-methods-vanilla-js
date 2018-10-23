@@ -1,0 +1,12 @@
+body{
+    margin: 20;
+    padding: 0;
+}
+.root{
+    display: block;
+    width: 100vw;
+    height: 10vh;
+}
+.root-child{
+    text-align: center;
+}
