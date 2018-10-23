@@ -56,3 +56,48 @@ document.write("value of  var newCopy = example2.slice(3) is : ", newCopy, "<br/
 document.write("<h3>if we give slice a second number we tell it where to stop...</h3>");
 var newCopy2 = example2.slice(2,4);
 document.write("value of  var newCopy2 = example2.slice(2,4) is : ", newCopy2, "<br/>");
+
+/************************************************************ */
+
+// method forEach loop explained
+document.write("<br/>" , "<br/>", "<br/>");
+document.write("<h3>forEach loop is better looking than a regular for loop, doesnt return a value but updates original array</h3><br/>");
+var toDos3 = [1 , 2 , 3 , 4 , 5 , 6 ];
+
+document.writeln("values of toDos3 array is : ", toDos3, "<br/>");
+
+toDos3.forEach( (val, i , arr) => {
+     arr[i] = val + 1;
+});
+
+document.writeln(" new value of toDos3 array is : ", toDos3, "<br/>");
+
+/*   **************************************************************  */
+// method map loop explained
+document.write("<br/>" , "<br/>", "<br/>");
+document.write("<h3>map is just like forEach but will return a value but doesn't updates original array</h3><br/>");
+var toDos4 = [1 , 2 , 3 , 4 , 5 , 6 ];
+
+document.writeln("values of toDos4 array is : ", toDos4, "<br/>");
+
+var example4 = toDos4.map((e)=>{
+    return e + 1;
+});
+
+document.writeln(" value of toDos4 after .map() is : ", toDos4, "still unchanged after map...<br/>");
+document.writeln(" new value of example4 after mapping through original array is : ", example4, "<br/>");
+
+/*   **************************************************************  */
+// method .filter explained
+document.write("<br/>" , "<br/>", "<br/>");
+document.write("<h3>filter will make a new array basied on you condition in the function </h3><br/>");
+var notNumbers = ['hello','cat','notCat','kimberly','love','kim' ];
+
+document.writeln("values of numbers array is : ", notNumbers, "<br/>");
+
+var example5 = notNumbers.filter( (val,i,arr) => {
+    return val.length < 5;
+});
+
+document.writeln(" value of notNumbers after .filter() is : ", notNumbers, "still unchanged after .filter()<br/>");
+document.writeln(" new value of example5 after .filter() is : ", example5 , "<br/>");
