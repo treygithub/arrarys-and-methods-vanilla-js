@@ -1,4 +1,4 @@
-// Array methods spelled out quit verbose! 
+// Array methods spelled out quite verbosely!
 
 
 // method one .pop() explained
@@ -90,7 +90,7 @@ document.writeln(" new value of example4 after mapping through original array is
 /*   **************************************************************  */
 // method .filter explained
 document.write("<br/>" , "<br/>", "<br/>");
-document.write("<h3>filter will make a new array basied on you condition in the function </h3><br/>");
+document.write("<h3>filter will make a new array based on you condition in the function </h3><br/>");
 var notNumbers = ['hello','cat','notCat','kimberly','love','kim' ];
 
 document.writeln("values of numbers array is : ", notNumbers, "<br/>");
